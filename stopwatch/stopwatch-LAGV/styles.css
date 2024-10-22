@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2em; /* Títulos más grandes */
+    font-weight: bold;
+    color: #003366; /* Color azul oscuro */
+    margin-bottom: 20px;
+}
+
+.timer-display {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+}
+
+.milliseconds {
+    font-size: 0.5em; /* Milisegundos más pequeños */
+    color: #777;
+    display: block;
+    margin-top: -10px; /* Alineación debajo de los segundos */
+    text-align: right; /* Alinear a la derecha */
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button#start-stopwatch,
+button#start-countdown {
+    background-color: #4caf50;
+    color: white;
+}
+
+button#reset-stopwatch,
+button#reset-countdown {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.adjust-time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.time-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adjust-time button {
+    margin: 5px;
+    padding: 5px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.adjust-time button:hover {
+    background-color: #ccc;
+}
+
+@media (max-width: 600px) {
+    .timer-display {
+        font-size: 3em;
+    }
+    .milliseconds {
+        font-size: 0.4em;
+    }
+}

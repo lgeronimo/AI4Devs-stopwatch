@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch and Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Stopwatch Section -->
+        <section id="stopwatch-section">
+            <h2>Stopwatch</h2>
+            <div class="timer-display">
+                <span id="stopwatch-hours">00</span>:<span id="stopwatch-minutes">00</span>:<span id="stopwatch-seconds">00</span>
+                <div class="milliseconds">
+                    <span id="stopwatch-milliseconds">000</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="start-stopwatch">Start</button>
+                <button id="reset-stopwatch">Reset</button>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown-section">
+            <h2>Countdown</h2>
+            <div class="timer-display">
+                <span id="countdown-hours">00</span>:<span id="countdown-minutes">00</span>:<span id="countdown-seconds">00</span>
+                <div class="milliseconds">
+                    <span id="countdown-milliseconds">000</span>
+                </div>
+            </div>
+            <div class="adjust-time">
+                <div class="time-controls">
+                    <button id="increment-hours">+</button>
+                    <button id="decrement-hours">-</button> Hours
+                </div>
+                <div class="time-controls">
+                    <button id="increment-minutes">+</button>
+                    <button id="decrement-minutes">-</button> Minutes
+                </div>
+                <div class="time-controls">
+                    <button id="increment-seconds">+</button>
+                    <button id="decrement-seconds">-</button> Seconds
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="start-countdown">Start</button>
+                <button id="reset-countdown">Reset</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
